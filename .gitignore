@@ -28,6 +28,8 @@ target/
 firebase-service-account.json
 *-service-account.json
 serviceAccountKey.json
+*firebase-adminsdk*.json
+*adminsdk*.json
 application-secrets.properties
 
 # ===========================
