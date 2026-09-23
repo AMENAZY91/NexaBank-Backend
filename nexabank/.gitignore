@@ -1,0 +1,50 @@
+# ===========================
+# Build output
+# ===========================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===========================
+# IDE
+# ===========================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+*.swp
+*~
+
+# ===========================
+# Secrets & Credentials
+# ===========================
+.env
+*.key
+*.pem
+firebase-service-account.json
+*-service-account.json
+serviceAccountKey.json
+
+# ===========================
+# OS files
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# Maven wrapper (optional)
+# ===========================
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/

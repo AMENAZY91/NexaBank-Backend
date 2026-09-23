@@ -1,0 +1,31 @@
+package com.nexabank.api.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import java.util.Map;
+
+@Component
+public class DataSeederRunner implements CommandLineRunner {
+
+    private static final Logger log = LoggerFactory.getLogger(DataSeederRunner.class);
+
+    private final DataSeederService dataSeederService;
+
+    public DataSeederRunner(DataSeederService dataSeederService) {
+        this.dataSeederService = dataSeederService;
+    }
+
+    @Override
+    public void run(String... args) {
+        log.info("Application started. Running database seeder...");
+        try {
+            Map<String, Object> result = dataSeederService.seedDatabase();
+            log.info("Database seeding completed: {}", result.get("message"));
+        } catch (Exception e) {
+            log.error("Database seeding failed: {}", e.getMessage(), e);
+        }
+    }
+}

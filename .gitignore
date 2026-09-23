@@ -1,0 +1,49 @@
+# ===========================
+# Build output
+# ===========================
+target/
+*.jar
+*.war
+*.class
+
+# ===========================
+# IDE
+# ===========================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# ===========================
+# Secrets & Credentials
+# ===========================
+.env
+*.key
+*.pem
+firebase-service-account.json
+*-service-account.json
+serviceAccountKey.json
+application-secrets.properties
+
+# ===========================
+# OS files
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# Misc
+# ===========================
+*.zip
